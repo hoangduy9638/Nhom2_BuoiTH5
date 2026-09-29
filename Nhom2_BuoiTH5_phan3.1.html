@@ -1,0 +1,379 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Công Nghệ Số Trong Học Tập</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #eef4ff, #f8faff);
+            color: #1e293b;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            min-height: 330px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 50px 20px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(37, 99, 235, 0.95),
+                    rgba(124, 58, 237, 0.95)
+                );
+            
+            color: white;
+        }
+
+        .hero {
+            max-width: 900px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            animation: fadeDown 1s ease;
+        }
+
+        .hero p {
+            font-size: 19px;
+            line-height: 1.7;
+            opacity: 0.95;
+            animation: fadeUp 1.2s ease;
+        }
+
+        /* ===== CONTAINER ===== */
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 50px auto;
+        }
+
+        /* ===== SECTION ===== */
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .section-title h2 {
+            font-size: 32px;
+            color: #1d4ed8;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #64748b;
+        }
+
+        /* ===== INFOGRAPHIC ===== */
+        .image-box {
+            background: white;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            transition: 0.4s;
+        }
+
+        .image-box:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(37, 99, 235, 0.18);
+        }
+
+        .image-box img {
+            width: 65%;
+            max-width: 650px;
+            border-radius: 15px;
+            display: block;
+            margin: auto;
+        }
+
+        /* ===== VIDEO ===== */
+        .video-box {
+            margin-top: 50px;
+            background: white;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .video-box video {
+            width: 100%;
+            max-height: 600px;
+            display: block;
+            border-radius: 15px;
+            background: black;
+        }
+
+        /* ===== CARDS ===== */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 50px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px 25px;
+            border-radius: 18px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+            transition: 0.4s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #2563eb;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            margin-top: 70px;
+            padding: 30px;
+            text-align: center;
+            background: #172554;
+            color: white;
+        }
+
+        footer p {
+            opacity: 0.8;
+        }
+
+        /* ===== ANIMATION ===== */
+        @keyframes fadeDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ===== ĐIỆN THOẠI ===== */
+        @media (max-width: 768px) {
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .image-box img {
+                width: 90%;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                width: 94%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="hero">
+
+            <h1>🚀 Công Nghệ Số Trong Học Tập</h1>
+
+            <p>
+                Công nghệ số đang thay đổi cách con người học tập,
+                tìm kiếm thông tin và trao đổi kiến thức.
+                Việc ứng dụng công nghệ giúp quá trình học trở nên
+                linh hoạt, trực quan và hiệu quả hơn.
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <main class="container">
+
+        <!-- INFOGRAPHIC -->
+        <section>
+
+            <div class="section-title">
+
+                <h2>📊 Infographic</h2>
+
+                <p>
+                    Những lợi ích nổi bật của công nghệ số trong học tập
+                </p>
+
+            </div>
+
+
+            <div class="image-box">
+
+                <img
+                    src="Nhom2_BuoiTh5_phan2.png"
+                    alt="Infographic về công nghệ số trong học tập"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- VIDEO -->
+        <section class="video-box">
+
+            <div class="section-title">
+
+                <h2>🎬 Video</h2>
+
+                <p>
+                    Video giới thiệu về ứng dụng công nghệ số trong học tập
+                </p>
+
+            </div>
+
+
+            <video controls>
+
+                <source
+                    src="Nhom2_BuoiTH5_phan2.2.mp4"
+                    type="video/mp4"
+                >
+
+                Trình duyệt của bạn không hỗ trợ video MP4.
+
+            </video>
+
+        </section>
+
+
+        <!-- LỢI ÍCH -->
+        <section>
+
+            <div class="section-title">
+
+                <h2>✨ Lợi Ích</h2>
+
+                <p>
+                    Công nghệ số mang lại nhiều thay đổi tích cực
+                    cho quá trình học tập.
+                </p>
+
+            </div>
+
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <div class="icon">📚</div>
+
+                    <h3>Tiếp cận kiến thức</h3>
+
+                    <p>
+                        Người học có thể dễ dàng tìm kiếm tài liệu,
+                        sách điện tử và các nguồn kiến thức trực tuyến.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="icon">💻</div>
+
+                    <h3>Học tập linh hoạt</h3>
+
+                    <p>
+                        Có thể học mọi lúc, mọi nơi thông qua máy tính,
+                        điện thoại và các nền tảng học trực tuyến.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="icon">🤝</div>
+
+                    <h3>Kết nối & chia sẻ</h3>
+
+                    <p>
+                        Công nghệ giúp học sinh, sinh viên và giáo viên
+                        trao đổi thông tin và làm việc nhóm hiệu quả.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 | Công Nghệ Số Trong Học Tập
+        </p>
+
+        <p>
+            Thiết kế bằng HTML & CSS
+        </p>
+
+    </footer>
+
+</body>
+</html>
+
